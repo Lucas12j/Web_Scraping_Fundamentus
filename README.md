@@ -28,6 +28,8 @@ pip install lxml
 
 Basta colocar todos os códigos das ações que pretende analisar no arquivo _"papeis.txt"_ (**um por linha**), e em seguida rodar o script _"fundamentus_api.py"_
 
+Inicialmente possui a funcionalidade de trazer ao usuário, os dados das empresas de maneira organizada. Porém pode ser aplicada para várias outras funções, como atualização automática de planilhas no Excel ou Google Sheets.
+
 ## Resultado:
 
 Como resultado a API exportará um arquivo no formato _.csv_ com todos os principais indicadores fundamentalistas das ações pré-selecionadas pelo usuário, direto do site _Fundamentus_. 
