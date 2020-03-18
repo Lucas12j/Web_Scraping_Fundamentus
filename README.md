@@ -24,7 +24,7 @@ pip install lxml
 
 ## Como usar:
 
-Iniciar o servidor executando o script _"fundamentus_api.py"_
+Inicie o servidor executando o script _"fundamentus_api.py"_
 
 Com o servidor funcionando acesse-o passando o código do papel que deseja pesquisar como parametro. e.g.
 ```
