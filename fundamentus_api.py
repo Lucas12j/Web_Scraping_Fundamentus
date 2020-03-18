@@ -1,7 +1,5 @@
 import requests
 from bs4 import BeautifulSoup
-from tqdm import tqdm
-import os
 import csv
 
 class GetData(object):
@@ -19,9 +17,7 @@ class GetData(object):
 
 
     def get_data(self):
-        os.system('cls' if os.name == 'nt' else 'clear')
-        for i in tqdm(self.lista_papeis):
-            print(f" Coletando dados de {i}: ")
+        for i in self.lista_papeis:
             i = i.rstrip()
             url = "https://www.fundamentus.com.br/detalhes.php?papel="+i
             r = requests.get(url)
@@ -60,7 +56,6 @@ class GetData(object):
             divBr_patrim = self.cleaner(str(soup.select(".center .clearfix .w728:nth-child(4) tr:nth-child(11) .data:nth-child(6) .txt")))
             giro_ativos = self.cleaner(str(soup.select(".center .clearfix .w728:nth-child(4) tr:nth-child(12) .data:nth-child(6) .txt")))
 
-            os.system('cls' if os.name == 'nt' else 'clear')
             try:
                 self.table.append([i, dia, mes, trinta_dias, doze_meses,vinte ,dezenove,dezoito, dezesete, dezeseis, quinze, p_l, p_vp, p_ebit, psr, p_ativos, p_cap_giro, p_ativ_circ_liq, dy, ev_ebitida, ev_ebit, 
                 cresc_rec, lpa, vpa, marg_bruta, marg_ebit, marg_liq,ebit_ativo, roic, roe, liqu_corr, divBr_patrim, giro_ativos])
