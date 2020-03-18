@@ -1,9 +1,7 @@
 # API não oficial do site http://fundamentus.com.br
 > Autor: Lucas da Silva dos Santos
 
->Dependências:   [BeautifulSoup4](https://pypi.org/project/beautifulsoup4/), 
-[Requests](https://pypi.org/project/requests/), [Tqdm](https://pypi.org/project/tqdm/), 
-[lxml](https://pypi.org/project/lxml/)
+>Dependências:   [BeautifulSoup4](https://pypi.org/project/beautifulsoup4/), [Requests](https://pypi.org/project/requests/), [lxml](https://pypi.org/project/lxml/), [flask-restful](https://flask-restful.readthedocs.io/en/latest/)
 
 
 
@@ -18,7 +16,7 @@ pip install beautifulsoup4
 
 pip install requests
 
-pip install tqdm
+pip install flask-restful
 
 pip install lxml
 ```
@@ -26,7 +24,12 @@ pip install lxml
 
 ## Como usar:
 
-Basta colocar todos os códigos das ações que pretende analisar no arquivo _"papeis.txt"_ (**um por linha**), e em seguida rodar o script _"fundamentus_api.py"_
+Iniciar o servidor executando o script _"fundamentus_api.py"_
+
+Com o servidor funcionando acesse-o passando o código do papel que deseja pesquisar como parametro. e.g.
+```
+127.0.0.1/bbas3
+```
 
 Inicialmente possui a funcionalidade de trazer ao usuário, os dados das empresas de maneira organizada. Porém pode ser aplicada para várias outras funções, como atualização automática de planilhas no Excel ou Google Sheets.
 
