@@ -1,4 +1,4 @@
-# API não oficial do site http://fundamentus.com.br
+# Web Scraping de dados do site http://fundamentus.com.br
 > Autor: Lucas da Silva dos Santos
 
 >Dependências:   [BeautifulSoup4](https://pypi.org/project/beautifulsoup4/), 
@@ -32,7 +32,7 @@ Inicialmente possui a funcionalidade de trazer ao usuário, os dados das empresa
 
 ## Resultado:
 
-Como resultado a API exportará um arquivo no formato _.csv_ com todos os principais indicadores fundamentalistas das ações pré-selecionadas pelo usuário, direto do site _Fundamentus_. 
+Como resultado o script exportará um arquivo no formato _.csv_ com todos os principais indicadores fundamentalistas das ações pré-selecionadas pelo usuário, direto do site _Fundamentus_. 
 
 
 
