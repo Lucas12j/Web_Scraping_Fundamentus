@@ -1,4 +1,4 @@
-# Web Scraping de dados do site http://fundamentus.com.br
+# Web Scraping dos indicadores fundamentalistas do site http://fundamentus.com.br
 > Autor: Lucas da Silva dos Santos
 
 >Dependências:   [BeautifulSoup4](https://pypi.org/project/beautifulsoup4/), 
